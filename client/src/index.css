@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-forest: #174C3C;
+  --color-primary-forest-hover: #133E31;
+  --color-secondary-emerald: #27866A;
+  --color-secondary-emerald-hover: #206E57;
+  --color-accent-coral: #FF6B4A;
+  --color-accent-coral-hover: #E85B3B;
+  --color-highlight-gold: #F4C95D;
+  --color-highlight-gold-hover: #E5BB4E;
+  --color-bg-ivory: #FAF8F2;
+  --color-card-white: #FFFFFF;
+  --color-text-charcoal: #202923;
+  --color-text-muted: #73796F;
+  --color-border-warm: #E8E5DC;
+  
+  --color-success: #174C3C;
+  --color-warning: #D99B16;
+  --color-error: #FF6B4A;
+}
+
+body {
+  background-color: #FAF8F2;
+  color: #202923;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Custom scrollbar matching forest theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF8F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #E8E5DC;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #27866A;
+}
+
+/* Strictly prevent browser default blue/purple focus outlines */
+*:focus {
+  outline-color: #27866A !important;
+}
+
+:focus-visible {
+  outline: 2px solid #27866A !important;
+  outline-offset: 2px;
+}

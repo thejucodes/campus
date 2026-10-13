@@ -1,0 +1,26 @@
+{
+  "name": "campuspulse-root",
+  "version": "1.0.0",
+  "description": "CampusPulse — Full-Stack Smart Campus Event Platform for SYNESIS '26 Hackathon",
+  "scripts": {
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "seed": "npm --prefix server run seed",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "build:client": "npm --prefix client run build",
+    "build:server": "npm --prefix server run build",
+    "test:e2e": "node test_e2e_workflows.js"
+  },
+  "keywords": [
+    "campuspulse",
+    "synesis-26",
+    "smart-campus",
+    "event-platform",
+    "hackathon",
+    "qr-ticketing",
+    "venue-conflict-detection",
+    "ai-flyer-extraction"
+  ],
+  "author": "CampusPulse Team",
+  "license": "ISC"
+}
